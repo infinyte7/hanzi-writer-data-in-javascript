@@ -63,7 +63,7 @@ console.log(data);
 <script src="_hanzi-writer.min.js"></script>
 
 <script>
-var writer = HanziWriter.create('character-target-div', '', {
+var writer = HanziWriter.create('character-target-div', '我', {
   width: 150,
   height: 150,
   showCharacter: false,
