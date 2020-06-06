@@ -1,5 +1,5 @@
 # hanzi-writer-data-in-javascript
- Each characters json in JavaScript file.
+ As data of each characters in JSON format but accessing them inside AnkiDroid show CORS errors. So access that file, copy content from JSON to a JS file then use this.
  
 As we can access js and image file using this
 ```html
@@ -79,4 +79,9 @@ It may not work on Anki Desktop because I have tried and sometime working someti
 To access other character repeat the same.
 
 # License
-[HanziWriter](https://github.com/chanind/hanzi-writer-data)
+
+[HanziWriter](https://github.com/chanind/hanzi-writer)
+<br>[HanziWriter Data](https://github.com/chanind/hanzi-writer-data)
+<br>
+<br>[Make Me A Hanzi](https://github.com/skishore/makemeahanzi)
+<br>[Arphic Technology](https://raw.githubusercontent.com/chanind/hanzi-writer-data/master/ARPHICPL.TXT)
