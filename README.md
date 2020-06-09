@@ -30,19 +30,23 @@ var chr_data = {"strokes":["M 350 571 Q 3....}
 
 To change code, first beautify code using this ``` https://beautifier.io```, then make following change
 a) Remove the link to load from internet  
-b) Change this ``` 200 != r.status ``` and replace/add this ```JSON.parse(JSON.stringify(chr_data))```
+b) Remove this ``` 200 != r.status ``` and replace/add this ```JSON.parse(JSON.stringify(chr_data))```
 ( May more good replacement can be done here )
 
 ![change_code](https://user-images.githubusercontent.com/12841290/83772020-804c5900-a6b5-11ea-9c0a-59b8ae7a45e0.PNG)
 
+#### After cleaning the code
 ```javascript
 ....
 ....
 // Note :  chr_data variable come from 我.js file
-r.overrideMimeType && r.overrideMimeType("application/json"), r.open("GET", "", !0), r.onerror = function(t) {
-....
-....
- 4 === r.readyState && (200 != r.status ? i(JSON.parse(JSON.stringify(chr_data))) : 0 !== r.status && n && n(r))
+ "use strict";
+        (function(o) {
+            t.exports = function(t, i, n) {
+                i(JSON.parse(JSON.stringify(chr_data)));
+            }
+        }).call(i, n(1))
+    }, 
 ....
 ....
 
